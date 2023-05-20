@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Cadastro de alunos</h1>
+    <form id="formulario">
+        <fieldset>
+            <legend>Insira os dados</legend>
+            <label for="nome">
+            Nome Completo:
+            </label>
+            <input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+            <br>
+
+            <label for="email">
+                E-mail:
+            </label>
+            <input type="email" name="email" id="email" placeholder="Digite o seu e-mail">
+            <br>
+
+            <label for="telefone">
+                Telefone:
+            </label>
+            <input type="text" name="telefone" id="telefone" placeholder="Digite o seu telefone com o DDD">
+            <br>
+
+            <label for="idade">
+                Idade:
+            </label>
+            <input type="number" name="idade" id="idade" placeholder="Selecione a idade">
+            <br>
+
+            <fieldset id="turno">
+            <label for="turno">Turno: </label> <br>
+            <input type="radio" name="turno"> Manhã 
+            <br>
+            <input type="radio" name="turno"> Tarde 
+            <br>
+            <input type="radio" name="turno"> Noite 
+            <br>
+            </fieldset>
+
+            <fieldset id="interesses">
+                <label for="interesses">Interesses: </label> <br>
+                <input type="checkbox" name="interesses"> Leitura
+                <br>
+                <input type="radio" name="interesses"> Filmes 
+                <br>
+                <input type="radio" name="interesses"> Games 
+                <br>
+                </fieldset>
+
+            <label for="curso">
+                Curso:
+            </label>
+            <select name="curso" id="curso">
+                <option value="1">Ciência da Computação</option>
+                <option value="2">Administração</option>
+                <option value="3">Direito</option>
+                <option value="4">Engenharia</option>
+            </select>
+            <br>
+
+            <label for="info">
+                Outras Informações:
+            </label> 
+            <br>
+
+            <textarea class="msg" name="info" id="info" cols="40" rows="6">
+                
+            </textarea>
+            <br>
+            
+            <input type="submit" value="Cadastrar">
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
